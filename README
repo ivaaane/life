@@ -1,0 +1,40 @@
+Simulate Conway's Game of Life.
+
+Usage: life [OPTIONS]
+Example: life -kxs50 -i40
+
+Options:
+    -c, --columns       Columns of the board. Default is 30.
+    -d, --delay         Delay time between generations in miliseconds. Default is 1.
+    -f, --file          Load local CSV file as preset.
+    -i, --initial_life  How much life appears in the first generation. Default is 20.
+    -k, --kill          If the game enters a loop, exit.
+    -l, --load          Load preset as initial configuration.
+    -p, --print         Printing mode (0-12). Default is 0.
+    -r, --rows          Rows of the board. Default is 30.
+    -s, --size          Size of the board in rows and columns.
+    -t, --termsize      Adjust the size to the terminal dimensions.
+    -x, --data          Display the amount of life and number of the generation.
+    -h, --help          Show this message!
+  
+Print modes:
+    0   Tiny
+    1   Squares
+    2   Half-width squares
+    3   Reversed squares
+    4   Chess
+    5   Binary
+    6   Non-binary
+    7   ASCII (#)
+    8   ASCII (@)
+    9   ASCII (*)
+    10  Gay
+    11  meow :3
+    12  🥺
+
+Default presets:
+    glider    pentonimo   diehard acorn   snake   infinity1   infinity2
+    gun       cloverleaf  ants    loss    amogus
+
+INSTALL:
+    curl https://raw.githubusercontent.com/ivaaane/life/refs/heads/main/install.sh | bash
