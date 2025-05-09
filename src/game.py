@@ -51,6 +51,7 @@ class Game:
             return
         self.history.pop(0)
         if len(set(self.history)) == 1:
+            os.system('echo -e "\033[?25h"')
             exit() 
     
     def load_preset(self, file):
